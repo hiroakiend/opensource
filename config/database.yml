@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  database: item
+  username: app_user_dev
+  password: q0NLoD3SW4Fx27h
+  host: localhost
+  port: 3306
