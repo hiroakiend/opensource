@@ -1,0 +1,39 @@
+<script type="text/javascript">
+  $(function(){
+  var jqDockOpts = {align: 'left', duration: 200, labels: 'tc', size: 48, distance: 85};
+  $('#jqDock').jqDock(jqDockOpts);
+  });
+</script>
+<noscript>
+  <style type="text/css">
+  #dock { top: 0; left: 100px; }
+  a.dock-item { position: relative; float: left; margin-right: 10px; }
+  .dock-item span { display: block; }
+  .stack { top: 0; }
+  .stack ul li { position: relative; }
+  </style>
+</noscript>
+<div class="stack">
+	<img src="/assets/stack.png" alt="stack"/>
+	<ul id="stack">
+		<li><a href="/items"><span>Aperture</span><img src="/assets/aperture.png" alt="Aperature" /></a></li>
+		<li><a href="#"><span>All&nbsp;Examples</span><img src="/assets/photoshop.png" alt="Photoshop" /></a></li>
+		<li><a href="example3.html"><span>Example&nbsp;3</span><img src="/assets/safari.png" alt="Safari" /></a></li>
+		<li><a href="example2.html"><span>Example&nbsp;2</span><img src="/assets/coda.png" alt="Coda" /></a></li>
+		<li><a href="index.html"><span>Example&nbsp;1</span><img src="/assets/finder.png" alt="Finder" /></a></li>			
+	</ul>
+</div>
+<div class="container">
+  <div id="s04">
+    <img src="/assets/top.jpg" class="img-responsive" alt="Responsive image">
+  </div>
+    <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+

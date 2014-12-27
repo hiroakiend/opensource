@@ -1,0 +1,38 @@
+.ui-autocomplete {
+  z-index: 5000;
+}
+ul.ui-autocomplete {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #999;
+  cursor: default;
+}
+ul.ui-autocomplete > li {
+  background-color: #FFF;
+  border-top: solid 1px #DDD;
+  margin: 0;
+  padding: 0;
+}
+ul.ui-autocomplete > a {
+  color: #000;
+  display: block;
+  padding: 3px;
+}
+.ui-helper-hidden-accessible {
+  display:none;
+}
+
+#space {
+  height: 100px;
+}
+
+.container_top {
+  background: url(/assets/top.jpg);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+

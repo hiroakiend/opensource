@@ -1,0 +1,137 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p id="notice"><%= notice %></p>
+      <div class="page-header">
+        <h1>案件詳細</h1>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel primary</h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Client
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.client %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Client Info
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.client_info %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Subject
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.subject %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Description
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.description %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Status
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.status %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Proceedings
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.proceedings %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Notes
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.notes %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Initial Price
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.initial_price %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Running Price
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.running_price %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Start Date
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.start_date %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            End Date
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.end_date %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Delivery
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.delivery %>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-2">
+            Introducer
+          </div>
+          <div class="col-md-1">：</div>
+          <div class="col-md-9">
+            <%= @item.introducer %>
+          </div>
+        </div>
+      </div>
+    <%= link_to 'Edit', edit_item_path(@item) %> |
+    <%= link_to 'Back', items_path %>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+

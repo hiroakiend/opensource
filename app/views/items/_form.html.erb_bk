@@ -1,0 +1,113 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="page-header">
+        <h1 id="forms">新規案件</h1>
+      </div>
+      <div class="well bs-component">
+<%= form_for(@item, :html => {:class => "form-horizontal", :role=>"form"}) do |f| %>
+  <fieldset>
+    <legend>Input Data</legend>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :client, class: 'col-lg-2 control-label' %>
+    <div class="col-lg-10">
+      <%= f.text_field :client, class: 'form-control', placeholder: '株式会社クロスワールド' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :client_info, class: 'col-lg-2 control-label' %>
+    <div class="col-lg-10">
+      <%= f.text_area :client_info, class: 'form-control', rows: '3', placeholder: '代表者名,電話番号,住所等' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :subject, class: 'col-lg-2 control-label' %>
+    <div class="col-lg-10">
+      <%= f.text_field :subject, class: 'form-control', placeholder: 'ウェブサイト制作' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :description, class: 'col-lg-2 control-label' %>
+    <div class="col-lg-10">
+      <%= f.text_area :description, class: 'form-control', rows: '3', placeholder: '案件概要' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :status, class: 'col-lg-2 control-label' %>
+    <div class="col-lg-10">
+      <%= f.select :status, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :proceedings, class: 'col-lg-2 control-label' %>
+    <div class="col-lg-10">
+      <%= f.text_area :proceedings, class: 'form-control', rows: '3', placeholder: '議事録' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :notes, class: 'col-lg-2 control-label' %>
+    <div class="col-lg-10">
+      <%= f.text_field :notes, class: 'form-control', placeholder: '備考' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :initial_price, class: 'col-lg-2 control-label'  %>
+    <div class="col-lg-10">
+      <%= f.number_field :initial_price, class: 'form-control', placeholder: '200000' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :running_price, class: 'col-lg-2 control-label'  %><br>
+    <div class="col-lg-10">
+      <%= f.number_field :running_price, class: 'form-control', placeholder: '10000' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :start_date, class: 'col-lg-2 control-label'  %><br>
+    <div class="col-lg-10">
+      <%= f.date_select :start_date %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :end_date, class: 'col-lg-2 control-label'  %><br>
+    <div class="col-lg-10">
+      <%= f.date_select :end_date %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :delivery, class: 'col-lg-2 control-label'  %><br>
+    <div class="col-lg-10">
+      <%= f.date_select :delivery %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :introducer, class: 'col-lg-2 control-label'  %><br>
+    <div class="col-lg-10">
+      <%= f.text_field :introducer, class: 'form-control', placeholder: '鷺谷さん' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-10 col-lg-offset-2">
+      <%= f.submit '登録', class: 'btn btn-primary'%>
+    </div>
+  </div>
+  </fieldset>
+<% end %>
+</div>
+</div>
+<div class="col-md-2"></div>
+</div>
+</div>

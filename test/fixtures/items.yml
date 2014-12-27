@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client: MyString
+  client_info: MyText
+  subject: MyString
+  description: MyText
+  status: MyString
+  proceedings: MyText
+  notes: MyString
+  initial_price: 1
+  running_price: 1
+  start_date: 2014-12-26
+  end_date: 2014-12-26
+  delivery: 2014-12-26
+  introducer: MyString
+
+two:
+  client: MyString
+  client_info: MyText
+  subject: MyString
+  description: MyText
+  status: MyString
+  proceedings: MyText
+  notes: MyString
+  initial_price: 1
+  running_price: 1
+  start_date: 2014-12-26
+  end_date: 2014-12-26
+  delivery: 2014-12-26
+  introducer: MyString

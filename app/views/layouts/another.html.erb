@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>YouTubeOptimizer</title>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true, 'charset' => 'utf-8' %>
+<%= csrf_meta_tags %>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="http://localhost:3000" class="navbar-brand">Home</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+      </button>
+    </div>
+    <div class="navbar-header">
+      <a href="/items/" class="navbar-brand">List</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../users/sign_out">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<%= yield %>
+<div id="footer">
+<div class="container">
+    <p class="text-center">Copyright 2014 - SuperStudio.INC - All Rights Reserved</p>
+</div>
+</div>
+</body>
+</html>
