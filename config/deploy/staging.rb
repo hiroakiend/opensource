@@ -1,6 +1,6 @@
-role :web, "54.149.83.123"                   # Your HTTP server, Apache/etc
-role :app, "54.149.83.123"                   # This may be the same as your `Web` server
-role :db,  "54.149.83.123", :primary => true # This is where Rails migrations will run
+role :web, "54.149.223.219"                   # Your HTTP server, Apache/etc
+role :app, "54.149.223.219"                   # This may be the same as your `Web` server
+role :db,  "54.149.223.219", :primary => true # This is where Rails migrations will run
 
 set :bundle_without, [:development, :test]
 set :rails_env, 'production'
