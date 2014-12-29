@@ -15,11 +15,10 @@
 //= require turbolinks
 //= require bootstrap
 //= require stack-1
-//= require stack-2
-//= require jquery.jqDock.min
-//= require dock-example1
+// stack-2
+// jquery.jqDock.min
+// dock-example1
 //= require fisheye-iutil.min
 //= require jquery.min
-//= require jQueryRotate
-//= require costom
-//= require_tree .
+// jQueryRotate
+//  costom

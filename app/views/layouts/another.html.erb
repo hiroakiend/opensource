@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>YouTubeOptimizer</title>
+<title>SuperStudio</title>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<noscript>
+  <style type="text/css">
+    #dock { top: -32px; }
+    a.dock-item { position: relative; float: left; margin-right: 10px; }
+    .dock-item span { display: block; }
+    .stack { top: 0; }
+    .stack ul li { position: relative; }
+  </style>
+</noscript>
+<script type="text/javascript">
+    $(function(){
+        var jqDockOpts = {align: 'left', duration: 200, labels: 'tc', size: 48, distance: 85};
+          $('#jqDock').jqDock(jqDockOpts);
+            });
+          </script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true, 'charset' => 'utf-8' %>
 <%= csrf_meta_tags %>
@@ -15,7 +29,7 @@
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a href="http://localhost:3000" class="navbar-brand">Home</a>
+      <a href="./" class="navbar-brand">Home</a>
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
       </button>
     </div>
@@ -33,9 +47,20 @@
 </div>
 <%= yield %>
 <div id="footer">
-<div class="container">
-    <p class="text-center">Copyright 2014 - SuperStudio.INC - All Rights Reserved</p>
+	<div class="container">
+    	<p class="text-center">Copyright 2014 - SuperStudio.INC - All Rights Reserved</p>
+	</div>
 </div>
+<div id="stacksNav">Navigation</div>
+<div class="stack">
+	<img src="/assets/stack.png" alt="stack" />
+  <ul id="stack">
+		<li><a href="#"><span>About</span><img src="/assets/home_resize.png" alt="Home" /></a></li>
+		<li><a href="http://instagram.com/"><span>Instagram</span><img src="/assets/aperture.png" alt="Photo" /></a></li>
+		<li><a href="https://www.youtube.com/"><span>YouTube</span><img src="/assets/video_resize.png" alt="Video" /></a></li>
+		<li><a href="https://calendar.sunrise.am/" target="_blank"><span>Sunrise Calendar</span><img src="/assets/calendar_resize.png" alt="Calendar" /></a></li>
+		<li><a href="/items/"><span>Item Management</span><img src="/assets/finder.png" alt="Items" /></a></li
+	</ul>
 </div>
 </body>
 </html>
